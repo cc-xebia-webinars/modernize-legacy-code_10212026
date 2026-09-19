@@ -1,0 +1,10 @@
+[project]
+name = "demo-01-understand-legacy"
+version = "1.0.0"
+description = "Demo 1: using Copilot to map, trace, and document a legacy billing system."
+requires-python = "==3.14.*"
+dependencies = ["arrow==0.13.2"]
+
+[tool.uv]
+# ShipBill runs in place from this folder, the way it always has, so there's nothing to build.
+package = false

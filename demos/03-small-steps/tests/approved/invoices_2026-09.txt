@@ -1,0 +1,177 @@
+INVOICE 1 customer 1001 dated 09/30/2026 due 10/30/2026
+  SHIP 50132 STD Z1 7.0KG               12.05
+  SHIP 50144 ECO Z3 22.0KG              23.80
+  RETURN 50149                           7.35
+  SHIP 50162 EXP Z4 21.0KG              57.95
+  SHIP 50163 ECO Z4 10.0KG              15.50
+  SHIP 50169 STD Z5 3.5KG               15.58
+  REMOTE AREA                            7.50
+  SHIP 50171 STD Z3 22.5KG              31.03
+  SHIP 50194 STD Z5 13.5KG              30.08
+  SHIP 50197 ECO Z2 13.0KG              14.45
+  SHIP 50202 EXP Z3 20.5KG              50.38
+  SHIP 50230 STD Z1 20.5KG              23.53
+  SHIP 50232 ECO Z1 14.5KG              13.73
+  SHIP 50239 ECO Z4 6.0KG               11.70
+  SHIP 50243 EXP Z1 6.5KG               20.38
+  SHIP 50268 ECO Z3 21.5KG              23.38
+  FUEL SURCHARGE                        30.10
+  SALES TAX                             29.57
+  TOTAL                                418.06
+INVOICE 2 customer 1012 dated 09/30/2026 due 10/30/2026
+  SHIP 50137 ECO Z5 11.0KG              19.95
+  SHIP 50138 EXP Z1 18.0KG              35.90
+  SHIP 50150 EXP Z5 19.5KG              65.93
+  SHIP 50152 EXP Z1 20.0KG              38.60
+  WEEKEND PICKUP                        12.00
+  SHIP 50165 STD Z2 23.5KG              29.03
+  SHIP 50167 STD Z4 18.5KG              31.83
+  SHIP 50168 EXP Z1 15.5KG              32.53
+  SHIP 50175 STD Z1 9.0KG               13.75
+  SHIP 50176 ECO Z3 6.5KG               10.63
+  SHIP 50179 ECO Z4 13.5KG              18.83
+  SHIP 50186 ECO Z5 8.0KG               16.50
+  SHIP 50190 STD Z4 8.5KG               19.33
+  SHIP 50192 EXP Z5 12.0KG              48.30
+  WEEKEND PICKUP                        12.00
+  SHIP 50196 STD Z4 14.0KG              26.20
+  SHIP 50201 EXP Z5 24.5KG              77.68
+  SHIP 50213 STD Z1 19.0KG              22.25
+  SHIP 50219 EXP Z1 25.0KG              45.35
+  SHIP 50223 ECO Z1 8.5KG                9.82
+  SHIP 50226 ECO Z4 3.0KG                8.85
+  SHIP 50228 ECO Z4 20.5KG              25.48
+  RETURN 50229                          12.50
+  SHIP 50231 STD Z3 6.0KG               13.70
+  SHIP 50233 EXP Z1 16.5KG              33.88
+  SHIP 50234 EXP Z1 9.0KG               23.75
+  SHIP 50244 ECO Z5 12.0KG              21.10
+  REMOTE AREA                            7.50
+  SHIP 50245 ECO Z1 20.0KG              17.30
+  SHIP 50252 STD Z4 20.0KG              33.70
+  SHIP 50261 STD Z1 10.5KG              15.02
+  SHIP 50262 ECO Z1 12.0KG              12.10
+  SHIP 50271 ECO Z1 24.0KG              19.90
+  DISCOUNT                             -83.12
+  FUEL SURCHARGE                        62.84
+  SALES TAX                             61.72
+  TOTAL                                872.63
+INVOICE 3 customer 1023 dated 09/30/2026 due 10/30/2026
+  SHIP 50139 ECO Z1 1.5KG                5.28
+  SHIP 50222 STD Z1 1.0KG                6.95
+  FUEL SURCHARGE                         1.03
+  MINIMUM CHARGE                        12.77
+  SALES TAX                              2.06
+  TOTAL                                 28.09
+INVOICE 4 customer 1047 dated 09/30/2026 due 10/30/2026
+  SHIP 50134 STD Z1 16.0KG              19.70
+  SHIP 50145 ECO Z3 21.0KG              22.95
+  SHIP 50151 ECO Z1 3.5KG                6.58
+  SHIP 50159 ECO Z1 23.5KG              19.58
+  SHIP 50161 ECO Z4 9.5KG               15.02
+  SHIP 50164 STD Z4 11.5KG              23.08
+  SHIP 50166 ECO Z1 17.0KG              15.35
+  SHIP 50177 STD Z4 21.0KG              34.95
+  SHIP 50178 STD Z5 19.5KG              38.78
+  SHIP 50180 STD Z5 14.0KG              30.80
+  SHIP 50198 ECO Z5 25.0KG              36.05
+  SHIP 50210 ECO Z1 23.5KG              19.58
+  SHIP 50220 STD Z3 17.5KG              25.78
+  SHIP 50225 STD Z1 19.5KG              22.68
+  SHIP 50236 EXP Z3 1.5KG               17.13
+  SHIP 50237 STD Z4 17.5KG              30.58
+  SHIP 50240 EXP Z5 6.0KG               34.20
+  SHIP 50242 STD Z2 19.0KG              24.75
+  SHIP 50250 ECO Z3 14.0KG              17.00
+  SHIP 50251 ECO Z1 11.5KG              11.78
+  SHIP 50255 STD Z5 22.5KG              43.13
+  SHIP 50258 EXP Z1 16.0KG              33.20
+  WEEKEND PICKUP                        12.00
+  SHIP 50260 ECO Z3 24.0KG              25.50
+  SHIP 50264 EXP Z3 19.0KG              47.75
+  SHIP 50265 ECO Z1 14.5KG              13.73
+  RETURN 50266                          10.49
+  SHIP 50270 EXP Z1 18.0KG              35.90
+  DISCOUNT                            -103.20
+  FUEL SURCHARGE                        49.12
+  SALES TAX                             48.25
+  TOTAL                                682.19
+INVOICE 5 customer 1058 dated 09/30/2026 due 10/30/2026
+  SHIP 50131 STD Z5 6.5KG               19.92
+  SHIP 50135 STD Z1 20.0KG              23.10
+  SHIP 50170 ECO Z1 4.5KG                7.23
+  SHIP 50185 STD Z4 6.5KG               16.83
+  SHIP 50205 STD Z3 22.0KG              30.50
+  SHIP 50235 STD Z4 18.0KG              31.20
+  SHIP 50248 ECO Z5 10.5KG              19.38
+  SHIP 50267 ECO Z5 6.5KG               14.77
+  FUEL SURCHARGE                        13.69
+  TOTAL                                176.62
+INVOICE 6 customer 1063 dated 09/30/2026 due 10/30/2026
+  SHIP 50133 ECO Z4 16.0KG              21.20
+  SHIP 50146 EXP Z3 2.5KG               18.88
+  SHIP 50147 ECO Z4 17.0KG              22.15
+  RETURN 50153                           5.18
+  SHIP 50191 EXP Z2 3.0KG               17.55
+  WEEKEND PICKUP                        12.00
+  SHIP 50207 EXP Z2 13.5KG              33.83
+  SHIP 50208 EXP Z3 15.0KG              40.75
+  SHIP 50256 ECO Z3 18.5KG              20.83
+  SHIP 50269 STD Z5 10.0KG              25.00
+  SHIP 50272 ECO Z1 17.0KG              15.35
+  FUEL SURCHARGE                        19.55
+  SALES TAX                             19.20
+  TOTAL                                271.47
+INVOICE 7 customer 1071 dated 09/30/2026 due 10/30/2026
+  RETURN 50140                           9.29
+  SHIP 50141 ECO Z2 15.5KG              16.33
+  SHIP 50142 OVN Z3 9.5KG               17.38
+  SHIP 50143 EXP Z2 19.5KG              43.13
+  SHIP 50148 EXP Z3 9.5KG               31.13
+  SHIP 50154 ECO Z4 10.5KG              15.98
+  SHIP 50156 EXP Z2 20.5KG              44.68
+  WEEKEND PICKUP                        12.00
+  SHIP 50160 EXP Z2 3.0KG               17.55
+  SHIP 50183 ECO Z1 10.0KG              10.80
+  SHIP 50184 ECO Z2 11.0KG              12.95
+  SHIP 50189 OVN Z1 11.5KG              15.88
+  SHIP 50195 STD Z5 2.5KG               14.13
+  RETURN 50200                           7.09
+  SHIP 50227 EXP Z3 7.5KG               27.63
+  WEEKEND PICKUP                        12.00
+  SHIP 50238 EXP Z2 23.0KG              48.55
+  SHIP 50246 STD Z4 22.5KG              36.83
+  SHIP 50253 ECO Z5 15.5KG              25.12
+  RETURN 50254                           7.15
+  SHIP 50259 STD Z4 17.5KG              30.58
+  DISCOUNT                             -45.62
+  FUEL SURCHARGE                        34.49
+  SALES TAX                             33.87
+  TOTAL                                478.92
+INVOICE 8 customer 1090 dated 09/30/2026 due 10/30/2026
+  RETURN 50157                           5.08
+  SHIP 50172 OVN Z4 13.0KG              24.95
+  SHIP 50181 ECO Z5 14.5KG              23.98
+  SHIP 50193 EXP Z1 8.0KG               22.40
+  WEEKEND PICKUP                        12.00
+  SHIP 50206 STD Z2 18.5KG              24.28
+  SHIP 50211 ECO Z5 7.0KG               15.35
+  SHIP 50212 STD Z4 2.0KG               11.20
+  RETURN 50218                          11.58
+  SHIP 50224 EXP Z5 10.5KG              44.78
+  RETURN 50247                          10.26
+  SHIP 50249 OVN Z3 8.0KG               15.80
+  SHIP 50257 STD Z1 21.5KG              24.38
+  SHIP 50263 ECO Z3 23.5KG              25.08
+  FUEL SURCHARGE                        22.77
+  SALES TAX                             22.37
+  TOTAL                                316.26
+INVOICE 9 customer 1102 dated 09/30/2026 due 10/30/2026
+  SHIP 50158 ECO Z5 13.0KG              22.25
+  SHIP 50209 STD Z3 1.5KG                8.98
+  RETURN 50214                           7.39
+  SHIP 50216 STD Z3 17.5KG              25.78
+  SHIP 50221 ECO Z1 18.5KG              16.33
+  SHIP 50241 ECO Z4 10.0KG              15.50
+  FUEL SURCHARGE                         8.08
+  TOTAL                                104.31

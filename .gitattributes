@@ -1,0 +1,3 @@
+# The golden master tests compare these files byte for byte, and the LedgerLink
+# files must keep their CRLF line endings, so git must never convert them.
+demos/**/tests/approved/** -text

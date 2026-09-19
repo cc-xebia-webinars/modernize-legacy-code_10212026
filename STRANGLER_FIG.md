@@ -1,0 +1,21 @@
+# The Strangler Fig
+
+The strangler fig is a way to replace a legacy system gradually instead of rewriting it in one go. Martin Fowler named it in 2004 after the strangler figs he saw on a trip to Queensland, Australia, and you'll also see it called the strangler pattern or the strangler application. A strangler fig starts as a seed in the upper branches of a host tree, sends roots down to the ground, and slowly grows around the trunk. Over many years it takes the host's place, and by the time the original tree is gone, the fig is standing on its own.
+
+Software can be replaced the same way, and the pattern comes down to two pieces:
+
+**The seam** is a single point that every caller goes through to reach the code you want to replace. It might be a proxy in front of a web application, a facade over a group of classes, or one function that the rest of the program calls. At first it sends everything to the legacy code, so adding it doesn't change how the system behaves. It's usually the only change the legacy code needs, and it gives you one place to decide which code handles which work.
+
+**The new code** grows next to the old code, behind the seam, and nothing depends on it until you say so. You move the work over one slice at a time: one endpoint, one feature, one customer type, or one product line. Before a slice moves, you check that the new code does what the old code did for that slice, ideally by running both on the same real inputs and comparing the results. If a slice misbehaves after it moves, you send it back through the seam with the same small change that moved it. When nothing routes to the legacy code anymore, you delete it.
+
+Compared with rewriting the system in one go, the practical differences look like this:
+
+- **The risk arrives in small pieces.** A big-bang rewrite saves all of its risk for one cutover date, usually after months of work in which the new system hasn't handled a single real request. The strangler fig spreads that risk across many small moves, each one easy to check and easy to reverse. The system keeps working the whole time, and the legacy code keeps doing its job right up until it isn't needed.
+
+- **The old code becomes the specification.** Legacy systems rarely have an accurate written spec, and the rules that matter most tend to be the ones nobody remembers adding. Because the old and new code run side by side, you don't have to know every rule ahead of time. A parallel run that compares their output on real data finds the differences for you, and each one becomes a question for a person to answer: is this a bug in the new code, a bug in the old code, or behavior that someone downstream depends on?
+
+- **You can stop partway.** A rewrite that's 70 percent done usually delivers nothing, because the old system still has to run everything until the new one is finished. A strangler fig that's 70 percent done has already moved 70 percent of the work onto the new code. If the remaining slices turn out to be stable, rarely changed, or tied to a contract with another system, it's often reasonable to leave them where they are.
+
+- **It works at any scale.** The classic picture is an HTTP proxy routing URLs between an old application and a new one, but the pattern doesn't need a network. Inside a single program, the seam can be one function that checks a setting and calls either the old module or the new one. That smaller version is often the better place to start, because it's cheap to build and easy to test.
+
+The reason this pattern matters when you're working with AI tools: an assistant can generate a replacement module in minutes, and that speed makes a big-bang rewrite look much more tempting than it used to. The trouble is that the model writes the new code from what it can see, and the rules that matter in legacy code are often the ones that aren't written down anywhere. You tend to get clean code that agrees with the legacy system on the common cases and quietly disagrees on the odd ones, such as a rounding rule or a special arrangement with one customer. The strangler fig gives that speed somewhere safe to land. The assistant writes the new code behind the seam, a parallel run checks it against the old code on real data, and a person reviews each disagreement and decides what to do about it before any slice moves over.

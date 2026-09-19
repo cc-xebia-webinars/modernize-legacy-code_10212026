@@ -1,0 +1,21 @@
+[project]
+name = "demo-03-small-steps"
+version = "1.0.0"
+description = "Demo 3: a targeted refactor and a dependency upgrade, one small step at a time."
+requires-python = "==3.14.*"
+dependencies = ["arrow==0.13.2"]
+
+[dependency-groups]
+dev = ["pytest==9.0.2", "pytest-cov==7.0.0"]
+
+[tool.uv]
+# ShipBill runs in place from this folder, the way it always has, so there's nothing to build.
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["shipbill"]
+branch = true

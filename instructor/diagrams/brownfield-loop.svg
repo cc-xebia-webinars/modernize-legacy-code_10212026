@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:db="https://cloudcontraptions.com/ns/diagram-builder/1" width="1008pt" height="612pt" viewBox="0 0 1008 612" db:version="1">
+<metadata>
+<db:model version="1" generator="diagram-builder 0.1.0" body-hash="1308007cb9ccc1cd"><![CDATA[
+{
+  "version": 1,
+  "title": "A loop for brownfield work",
+  "page": {
+    "width": 1008.0,
+    "height": 612.0,
+    "margin": 36.0,
+    "background": "#ffffff"
+  },
+  "elements": [
+    {
+      "type": "shape",
+      "id": "understand",
+      "kind": "rect",
+      "x": 40.0,
+      "y": 200.0,
+      "w": 200.0,
+      "h": 72.0,
+      "text": "1. Understand",
+      "style": {
+        "fill": "#e3edfb",
+        "stroke": "#2a78d6",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 10.0,
+        "font": null,
+        "font_size": 22.0,
+        "font_weight": 700,
+        "italic": null,
+        "text_color": "#10386b",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "protect",
+      "kind": "rect",
+      "x": 282.0,
+      "y": 200.0,
+      "w": 200.0,
+      "h": 72.0,
+      "text": "2. Protect",
+      "style": {
+        "fill": "#d9f2e9",
+        "stroke": "#0f8f63",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 10.0,
+        "font": null,
+        "font_size": 22.0,
+        "font_weight": 700,
+        "italic": null,
+        "text_color": "#0a4d36",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "change",
+      "kind": "rect",
+      "x": 524.0,
+      "y": 200.0,
+      "w": 200.0,
+      "h": 72.0,
+      "text": "3. Change",
+      "style": {
+        "fill": "#e6e4f6",
+        "stroke": "#4a3aa7",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 10.0,
+        "font": null,
+        "font_size": 22.0,
+        "font_weight": 700,
+        "italic": null,
+        "text_color": "#2a2160",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "verify",
+      "kind": "rect",
+      "x": 766.0,
+      "y": 200.0,
+      "w": 200.0,
+      "h": 72.0,
+      "text": "4. Verify",
+      "style": {
+        "fill": "#fce6da",
+        "stroke": "#d9541f",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 10.0,
+        "font": null,
+        "font_size": 22.0,
+        "font_weight": 700,
+        "italic": null,
+        "text_color": "#7a2f0f",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn1",
+      "from": "understand",
+      "to": "protect",
+      "route": "straight",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.5,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn2",
+      "from": "protect",
+      "to": "change",
+      "route": "straight",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.5,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn3",
+      "from": "change",
+      "to": "verify",
+      "route": "straight",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.5,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn4",
+      "from": "verify",
+      "to": "understand",
+      "from_side": "top",
+      "to_side": "top",
+      "label": "next small change",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.5,
+        "dash": "dashed",
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": 18.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "ai1",
+      "kind": "rect",
+      "x": 40.0,
+      "y": 300.0,
+      "w": 200.0,
+      "h": 76.0,
+      "text": "AI maps, traces, and drafts docs",
+      "style": {
+        "fill": "#f3f6fb",
+        "stroke": "#d8d7d2",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 6.0,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "ai2",
+      "kind": "rect",
+      "x": 282.0,
+      "y": 300.0,
+      "w": 200.0,
+      "h": 76.0,
+      "text": "AI drafts characterization tests",
+      "style": {
+        "fill": "#f3f6fb",
+        "stroke": "#d8d7d2",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 6.0,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "ai3",
+      "kind": "rect",
+      "x": 524.0,
+      "y": 300.0,
+      "w": 200.0,
+      "h": 76.0,
+      "text": "AI plans and makes one small step",
+      "style": {
+        "fill": "#f3f6fb",
+        "stroke": "#d8d7d2",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 6.0,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "ai4",
+      "kind": "rect",
+      "x": 766.0,
+      "y": 300.0,
+      "w": 200.0,
+      "h": 76.0,
+      "text": "Tests and a parallel run check the change",
+      "style": {
+        "fill": "#f3f6fb",
+        "stroke": "#d8d7d2",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 6.0,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "you1",
+      "kind": "rect",
+      "x": 40.0,
+      "y": 390.0,
+      "w": 200.0,
+      "h": 76.0,
+      "text": "You check claims against the code",
+      "style": {
+        "fill": "#fbeecf",
+        "stroke": "#b07d00",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 6.0,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": "#5c4100",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "you2",
+      "kind": "rect",
+      "x": 282.0,
+      "y": 390.0,
+      "w": 200.0,
+      "h": 76.0,
+      "text": "You approve what counts as unchanged",
+      "style": {
+        "fill": "#fbeecf",
+        "stroke": "#b07d00",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 6.0,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": "#5c4100",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "you3",
+      "kind": "rect",
+      "x": 524.0,
+      "y": 390.0,
+      "w": 200.0,
+      "h": 76.0,
+      "text": "You review the plan and the diff",
+      "style": {
+        "fill": "#fbeecf",
+        "stroke": "#b07d00",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 6.0,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": "#5c4100",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "you4",
+      "kind": "rect",
+      "x": 766.0,
+      "y": 390.0,
+      "w": 200.0,
+      "h": 76.0,
+      "text": "You decide about any difference",
+      "style": {
+        "fill": "#fbeecf",
+        "stroke": "#b07d00",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 6.0,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": "#5c4100",
+        "align": null,
+        "padding": null
+      }
+    }
+  ],
+  "next_id": {
+    "conn": 4
+  }
+}
+]]></db:model>
+</metadata>
+<!-- GENERATED BY diagram-builder. The <metadata> block above is the source of truth.
+       Edits made below this line are DISCARDED on the next diagram-builder command. -->
+<g id="db-body">
+<rect x="0" y="0" width="1008" height="612" fill="#ffffff"/>
+<g id="conn1"><path d="M240 236L267 236" fill="none" stroke="#6b6a66" stroke-width="2.5"/><path d="M282 236L265.33 242.67L265.33 229.33Z" fill="#6b6a66"/></g>
+<g id="conn2"><path d="M482 236L509 236" fill="none" stroke="#6b6a66" stroke-width="2.5"/><path d="M524 236L507.33 242.67L507.33 229.33Z" fill="#6b6a66"/></g>
+<g id="conn3"><path d="M724 236L751 236" fill="none" stroke="#6b6a66" stroke-width="2.5"/><path d="M766 236L749.33 242.67L749.33 229.33Z" fill="#6b6a66"/></g>
+<g id="conn4"><path d="M866 200L866 184L140 184L140 185" fill="none" stroke="#6b6a66" stroke-width="2.5" stroke-dasharray="10 6.25" stroke-linecap="round"/><path d="M140 200L133.33 183.33L146.67 183.33Z" fill="#6b6a66"/><rect x="434.49" y="171.25" width="152.02" height="25.5" rx="2" fill="#ffffff"/><text x="510.5" y="190.75" font-family="IBM Plex Sans" font-size="18" fill="#1a1a1a" text-anchor="middle"><tspan x="510.5" dy="0">next small change</tspan></text></g>
+<g id="understand"><path d="M50 200H230A10 10 0 0 1 240 210V262A10 10 0 0 1 230 272H50A10 10 0 0 1 40 262V210A10 10 0 0 1 50 200Z" fill="#e3edfb" stroke="#2a78d6" stroke-width="1.5"/><text x="140" y="244.25" font-family="IBM Plex Sans" font-size="22" font-weight="700" fill="#10386b" text-anchor="middle"><tspan x="140" dy="0">1. Understand</tspan></text></g>
+<g id="protect"><path d="M292 200H472A10 10 0 0 1 482 210V262A10 10 0 0 1 472 272H292A10 10 0 0 1 282 262V210A10 10 0 0 1 292 200Z" fill="#d9f2e9" stroke="#0f8f63" stroke-width="1.5"/><text x="382" y="244.25" font-family="IBM Plex Sans" font-size="22" font-weight="700" fill="#0a4d36" text-anchor="middle"><tspan x="382" dy="0">2. Protect</tspan></text></g>
+<g id="change"><path d="M534 200H714A10 10 0 0 1 724 210V262A10 10 0 0 1 714 272H534A10 10 0 0 1 524 262V210A10 10 0 0 1 534 200Z" fill="#e6e4f6" stroke="#4a3aa7" stroke-width="1.5"/><text x="624" y="244.25" font-family="IBM Plex Sans" font-size="22" font-weight="700" fill="#2a2160" text-anchor="middle"><tspan x="624" dy="0">3. Change</tspan></text></g>
+<g id="verify"><path d="M776 200H956A10 10 0 0 1 966 210V262A10 10 0 0 1 956 272H776A10 10 0 0 1 766 262V210A10 10 0 0 1 776 200Z" fill="#fce6da" stroke="#d9541f" stroke-width="1.5"/><text x="866" y="244.25" font-family="IBM Plex Sans" font-size="22" font-weight="700" fill="#7a2f0f" text-anchor="middle"><tspan x="866" dy="0">4. Verify</tspan></text></g>
+<g id="ai1"><path d="M46 300H234A6 6 0 0 1 240 306V370A6 6 0 0 1 234 376H46A6 6 0 0 1 40 370V306A6 6 0 0 1 46 300Z" fill="#f3f6fb" stroke="#d8d7d2" stroke-width="1.5"/><text x="140" y="333.75" font-family="IBM Plex Sans" font-size="17" fill="#1a1a1a" text-anchor="middle"><tspan x="140" dy="0">AI maps, traces, and</tspan><tspan x="140" dy="21.25">drafts docs</tspan></text></g>
+<g id="ai2"><path d="M288 300H476A6 6 0 0 1 482 306V370A6 6 0 0 1 476 376H288A6 6 0 0 1 282 370V306A6 6 0 0 1 288 300Z" fill="#f3f6fb" stroke="#d8d7d2" stroke-width="1.5"/><text x="382" y="333.75" font-family="IBM Plex Sans" font-size="17" fill="#1a1a1a" text-anchor="middle"><tspan x="382" dy="0">AI drafts</tspan><tspan x="382" dy="21.25">characterization tests</tspan></text></g>
+<g id="ai3"><path d="M530 300H718A6 6 0 0 1 724 306V370A6 6 0 0 1 718 376H530A6 6 0 0 1 524 370V306A6 6 0 0 1 530 300Z" fill="#f3f6fb" stroke="#d8d7d2" stroke-width="1.5"/><text x="624" y="333.75" font-family="IBM Plex Sans" font-size="17" fill="#1a1a1a" text-anchor="middle"><tspan x="624" dy="0">AI plans and makes</tspan><tspan x="624" dy="21.25">one small step</tspan></text></g>
+<g id="ai4"><path d="M772 300H960A6 6 0 0 1 966 306V370A6 6 0 0 1 960 376H772A6 6 0 0 1 766 370V306A6 6 0 0 1 772 300Z" fill="#f3f6fb" stroke="#d8d7d2" stroke-width="1.5"/><text x="866" y="333.75" font-family="IBM Plex Sans" font-size="17" fill="#1a1a1a" text-anchor="middle"><tspan x="866" dy="0">Tests and a parallel run</tspan><tspan x="866" dy="21.25">check the change</tspan></text></g>
+<g id="you1"><path d="M46 390H234A6 6 0 0 1 240 396V460A6 6 0 0 1 234 466H46A6 6 0 0 1 40 460V396A6 6 0 0 1 46 390Z" fill="#fbeecf" stroke="#b07d00" stroke-width="1.5"/><text x="140" y="423.75" font-family="IBM Plex Sans" font-size="17" fill="#5c4100" text-anchor="middle"><tspan x="140" dy="0">You check claims</tspan><tspan x="140" dy="21.25">against the code</tspan></text></g>
+<g id="you2"><path d="M288 390H476A6 6 0 0 1 482 396V460A6 6 0 0 1 476 466H288A6 6 0 0 1 282 460V396A6 6 0 0 1 288 390Z" fill="#fbeecf" stroke="#b07d00" stroke-width="1.5"/><text x="382" y="423.75" font-family="IBM Plex Sans" font-size="17" fill="#5c4100" text-anchor="middle"><tspan x="382" dy="0">You approve what</tspan><tspan x="382" dy="21.25">counts as unchanged</tspan></text></g>
+<g id="you3"><path d="M530 390H718A6 6 0 0 1 724 396V460A6 6 0 0 1 718 466H530A6 6 0 0 1 524 460V396A6 6 0 0 1 530 390Z" fill="#fbeecf" stroke="#b07d00" stroke-width="1.5"/><text x="624" y="423.75" font-family="IBM Plex Sans" font-size="17" fill="#5c4100" text-anchor="middle"><tspan x="624" dy="0">You review the plan</tspan><tspan x="624" dy="21.25">and the diff</tspan></text></g>
+<g id="you4"><path d="M772 390H960A6 6 0 0 1 966 396V460A6 6 0 0 1 960 466H772A6 6 0 0 1 766 460V396A6 6 0 0 1 772 390Z" fill="#fbeecf" stroke="#b07d00" stroke-width="1.5"/><text x="866" y="423.75" font-family="IBM Plex Sans" font-size="17" fill="#5c4100" text-anchor="middle"><tspan x="866" dy="0">You decide about any</tspan><tspan x="866" dy="21.25">difference</tspan></text></g>
+</g>
+</svg>

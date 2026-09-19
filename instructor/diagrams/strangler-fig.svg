@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:db="https://cloudcontraptions.com/ns/diagram-builder/1" width="1008pt" height="612pt" viewBox="0 0 1008 612" db:version="1">
+<metadata>
+<db:model version="1" generator="diagram-builder 0.1.0" body-hash="9bec1be0cc75b114"><![CDATA[
+{
+  "version": 1,
+  "title": "The strangler fig in ShipBill",
+  "page": {
+    "width": 1008.0,
+    "height": 612.0,
+    "margin": 36.0,
+    "background": "#ffffff"
+  },
+  "elements": [
+    {
+      "type": "shape",
+      "id": "caller",
+      "kind": "rect",
+      "x": 36.0,
+      "y": 226.0,
+      "w": 170.0,
+      "h": 80.0,
+      "text": "calc_invoice\nasks for a price",
+      "style": {
+        "fill": "#eceef1",
+        "stroke": "#5b6672",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 8.0,
+        "font": null,
+        "font_size": 18.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": "#25303a",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "router",
+      "kind": "hexagon",
+      "x": 262.0,
+      "y": 222.0,
+      "w": 196.0,
+      "h": 88.0,
+      "text": "pricing_router\nthe seam",
+      "style": {
+        "fill": "#e6e4f6",
+        "stroke": "#4a3aa7",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": 18.0,
+        "font_weight": 700,
+        "italic": null,
+        "text_color": "#2a2160",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "legacy",
+      "kind": "rect",
+      "x": 540.0,
+      "y": 104.0,
+      "w": 210.0,
+      "h": 84.0,
+      "text": "pricing.py\nlegacy engine",
+      "style": {
+        "fill": "#f0efec",
+        "stroke": "#898781",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 8.0,
+        "font": null,
+        "font_size": 18.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": "#3a3937",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "v2",
+      "kind": "rect",
+      "x": 540.0,
+      "y": 344.0,
+      "w": 210.0,
+      "h": 84.0,
+      "text": "pricing_v2.py\nnew engine",
+      "style": {
+        "fill": "#d9f2e9",
+        "stroke": "#0f8f63",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 8.0,
+        "font": null,
+        "font_size": 18.0,
+        "font_weight": 700,
+        "italic": null,
+        "text_color": "#0a4d36",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "parallel",
+      "kind": "rect",
+      "x": 800.0,
+      "y": 220.0,
+      "w": 172.0,
+      "h": 92.0,
+      "text": "parallel_run.py\nprices every shipment both ways",
+      "style": {
+        "fill": "#fce6da",
+        "stroke": "#d9541f",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": 8.0,
+        "font": null,
+        "font_size": 16.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": "#7a2f0f",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn1",
+      "from": "caller",
+      "to": "router",
+      "route": "straight",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.5,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn2",
+      "from": "router",
+      "to": "legacy",
+      "from_side": "top",
+      "to_side": "left",
+      "label": "every other service",
+      "label_at": 0.35,
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.5,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": 16.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn3",
+      "from": "router",
+      "to": "v2",
+      "from_side": "bottom",
+      "to_side": "left",
+      "label": "ROUTED_TO_V2",
+      "label_at": 0.35,
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.5,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": "mono",
+        "font_size": 16.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn4",
+      "from": "parallel",
+      "to": "legacy",
+      "from_side": "top",
+      "to_side": "right",
+      "end_arrow": "none",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.0,
+        "dash": "dashed",
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn5",
+      "from": "parallel",
+      "to": "v2",
+      "from_side": "bottom",
+      "to_side": "right",
+      "end_arrow": "none",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.0,
+        "dash": "dashed",
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "label",
+      "id": "steps_label",
+      "x": 36.0,
+      "y": 486.0,
+      "text": "One service at a time:",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": 17.0,
+        "font_weight": 700,
+        "italic": null,
+        "text_color": "#1a1a1a",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "s1",
+      "kind": "stadium",
+      "x": 250.0,
+      "y": 476.0,
+      "w": 96.0,
+      "h": 40.0,
+      "text": "ECO",
+      "style": {
+        "fill": "#d9f2e9",
+        "stroke": "#0f8f63",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": "mono",
+        "font_size": 16.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": "#0a4d36",
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "s2",
+      "kind": "stadium",
+      "x": 382.0,
+      "y": 476.0,
+      "w": 96.0,
+      "h": 40.0,
+      "text": "STD",
+      "style": {
+        "fill": "#ffffff",
+        "stroke": "#0f8f63",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": "mono",
+        "font_size": 16.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "s3",
+      "kind": "stadium",
+      "x": 514.0,
+      "y": 476.0,
+      "w": 96.0,
+      "h": 40.0,
+      "text": "EXP",
+      "style": {
+        "fill": "#ffffff",
+        "stroke": "#0f8f63",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": "mono",
+        "font_size": 16.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "s4",
+      "kind": "stadium",
+      "x": 646.0,
+      "y": 476.0,
+      "w": 96.0,
+      "h": 40.0,
+      "text": "OVN",
+      "style": {
+        "fill": "#ffffff",
+        "stroke": "#0f8f63",
+        "stroke_width": null,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": "mono",
+        "font_size": 16.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "shape",
+      "id": "s5",
+      "kind": "stadium",
+      "x": 778.0,
+      "y": 476.0,
+      "w": 190.0,
+      "h": 40.0,
+      "text": "delete pricing.py",
+      "style": {
+        "fill": "#ffffff",
+        "stroke": "#898781",
+        "stroke_width": null,
+        "dash": "dashed",
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": 16.0,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn6",
+      "from": "s1",
+      "to": "s2",
+      "route": "straight",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.0,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn7",
+      "from": "s2",
+      "to": "s3",
+      "route": "straight",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.0,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn8",
+      "from": "s3",
+      "to": "s4",
+      "route": "straight",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.0,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    },
+    {
+      "type": "connector",
+      "id": "conn9",
+      "from": "s4",
+      "to": "s5",
+      "route": "straight",
+      "style": {
+        "fill": null,
+        "stroke": null,
+        "stroke_width": 2.0,
+        "dash": null,
+        "opacity": null,
+        "corner_radius": null,
+        "font": null,
+        "font_size": null,
+        "font_weight": null,
+        "italic": null,
+        "text_color": null,
+        "align": null,
+        "padding": null
+      }
+    }
+  ],
+  "next_id": {
+    "conn": 9
+  }
+}
+]]></db:model>
+</metadata>
+<!-- GENERATED BY diagram-builder. The <metadata> block above is the source of truth.
+       Edits made below this line are DISCARDED on the next diagram-builder command. -->
+<g id="db-body">
+<rect x="0" y="0" width="1008" height="612" fill="#ffffff"/>
+<g id="conn1"><path d="M206 266L247 266" fill="none" stroke="#6b6a66" stroke-width="2.5"/><path d="M262 266L245.33 272.67L245.33 259.33Z" fill="#6b6a66"/></g>
+<g id="conn2"><path d="M360 222L360 146L525 146" fill="none" stroke="#6b6a66" stroke-width="2.5"/><path d="M540 146L523.33 152.67L523.33 139.33Z" fill="#6b6a66"/><rect x="297.21" y="134.5" width="142.29" height="23" rx="2" fill="#ffffff"/><text x="368.35" y="152" font-family="IBM Plex Sans" font-size="16" fill="#1a1a1a" text-anchor="middle"><tspan x="368.35" dy="0">every other service</tspan></text></g>
+<g id="conn3"><path d="M360 310L360 386L525 386" fill="none" stroke="#6b6a66" stroke-width="2.5"/><path d="M540 386L523.33 392.67L523.33 379.33Z" fill="#6b6a66"/><rect x="307.75" y="374.5" width="121.2" height="23" rx="2" fill="#ffffff"/><text x="368.35" y="391.76" font-family="JetBrains Mono" font-size="16" fill="#1a1a1a" text-anchor="middle"><tspan x="368.35" dy="0">ROUTED_TO_V2</tspan></text></g>
+<g id="conn4"><path d="M886 220L886 146L750 146" fill="none" stroke="#6b6a66" stroke-width="2" stroke-dasharray="8 5" stroke-linecap="round"/></g>
+<g id="conn5"><path d="M886 312L886 386L750 386" fill="none" stroke="#6b6a66" stroke-width="2" stroke-dasharray="8 5" stroke-linecap="round"/></g>
+<g id="conn6"><path d="M346 496L370 496" fill="none" stroke="#6b6a66" stroke-width="2"/><path d="M382 496L368.67 501.33L368.67 490.67Z" fill="#6b6a66"/></g>
+<g id="conn7"><path d="M478 496L502 496" fill="none" stroke="#6b6a66" stroke-width="2"/><path d="M514 496L500.67 501.33L500.67 490.67Z" fill="#6b6a66"/></g>
+<g id="conn8"><path d="M610 496L634 496" fill="none" stroke="#6b6a66" stroke-width="2"/><path d="M646 496L632.67 501.33L632.67 490.67Z" fill="#6b6a66"/></g>
+<g id="conn9"><path d="M742 496L766 496" fill="none" stroke="#6b6a66" stroke-width="2"/><path d="M778 496L764.67 501.33L764.67 490.67Z" fill="#6b6a66"/></g>
+<g id="caller"><path d="M44 226H198A8 8 0 0 1 206 234V298A8 8 0 0 1 198 306H44A8 8 0 0 1 36 298V234A8 8 0 0 1 44 226Z" fill="#eceef1" stroke="#5b6672" stroke-width="1.5"/><text x="121" y="261.5" font-family="IBM Plex Sans" font-size="18" fill="#25303a" text-anchor="middle"><tspan x="121" dy="0">calc_invoice</tspan><tspan x="121" dy="22.5">asks for a price</tspan></text></g>
+<g id="router"><path d="M305.12 222L414.88 222L458 266L414.88 310L305.12 310L262 266Z" fill="#e6e4f6" stroke="#4a3aa7" stroke-width="1.5"/><text x="360" y="261.5" font-family="IBM Plex Sans" font-size="18" font-weight="700" fill="#2a2160" text-anchor="middle"><tspan x="360" dy="0">pricing_router</tspan><tspan x="360" dy="22.5">the seam</tspan></text></g>
+<g id="legacy"><path d="M548 104H742A8 8 0 0 1 750 112V180A8 8 0 0 1 742 188H548A8 8 0 0 1 540 180V112A8 8 0 0 1 548 104Z" fill="#f0efec" stroke="#898781" stroke-width="1.5"/><text x="645" y="141.5" font-family="IBM Plex Sans" font-size="18" fill="#3a3937" text-anchor="middle"><tspan x="645" dy="0">pricing.py</tspan><tspan x="645" dy="22.5">legacy engine</tspan></text></g>
+<g id="v2"><path d="M548 344H742A8 8 0 0 1 750 352V420A8 8 0 0 1 742 428H548A8 8 0 0 1 540 420V352A8 8 0 0 1 548 344Z" fill="#d9f2e9" stroke="#0f8f63" stroke-width="1.5"/><text x="645" y="381.5" font-family="IBM Plex Sans" font-size="18" font-weight="700" fill="#0a4d36" text-anchor="middle"><tspan x="645" dy="0">pricing_v2.py</tspan><tspan x="645" dy="22.5">new engine</tspan></text></g>
+<g id="parallel"><path d="M808 220H964A8 8 0 0 1 972 228V304A8 8 0 0 1 964 312H808A8 8 0 0 1 800 304V228A8 8 0 0 1 808 220Z" fill="#fce6da" stroke="#d9541f" stroke-width="1.5"/><text x="886" y="252" font-family="IBM Plex Sans" font-size="16" fill="#7a2f0f" text-anchor="middle"><tspan x="886" dy="0">parallel_run.py</tspan><tspan x="886" dy="20">prices every</tspan><tspan x="886" dy="20">shipment both ways</tspan></text></g>
+<g id="steps_label"><text x="122.37" y="503" font-family="IBM Plex Sans" font-size="17" font-weight="700" fill="#1a1a1a" text-anchor="middle"><tspan x="122.37" dy="0">One service at a time:</tspan></text></g>
+<g id="s1"><path d="M270 476H326A20 20 0 0 1 346 496V496A20 20 0 0 1 326 516H270A20 20 0 0 1 250 496V496A20 20 0 0 1 270 476Z" fill="#d9f2e9" stroke="#0f8f63" stroke-width="1.5"/><text x="298" y="501.76" font-family="JetBrains Mono" font-size="16" fill="#0a4d36" text-anchor="middle"><tspan x="298" dy="0">ECO</tspan></text></g>
+<g id="s2"><path d="M402 476H458A20 20 0 0 1 478 496V496A20 20 0 0 1 458 516H402A20 20 0 0 1 382 496V496A20 20 0 0 1 402 476Z" fill="#ffffff" stroke="#0f8f63" stroke-width="1.5"/><text x="430" y="501.76" font-family="JetBrains Mono" font-size="16" fill="#1a1a1a" text-anchor="middle"><tspan x="430" dy="0">STD</tspan></text></g>
+<g id="s3"><path d="M534 476H590A20 20 0 0 1 610 496V496A20 20 0 0 1 590 516H534A20 20 0 0 1 514 496V496A20 20 0 0 1 534 476Z" fill="#ffffff" stroke="#0f8f63" stroke-width="1.5"/><text x="562" y="501.76" font-family="JetBrains Mono" font-size="16" fill="#1a1a1a" text-anchor="middle"><tspan x="562" dy="0">EXP</tspan></text></g>
+<g id="s4"><path d="M666 476H722A20 20 0 0 1 742 496V496A20 20 0 0 1 722 516H666A20 20 0 0 1 646 496V496A20 20 0 0 1 666 476Z" fill="#ffffff" stroke="#0f8f63" stroke-width="1.5"/><text x="694" y="501.76" font-family="JetBrains Mono" font-size="16" fill="#1a1a1a" text-anchor="middle"><tspan x="694" dy="0">OVN</tspan></text></g>
+<g id="s5"><path d="M798 476H948A20 20 0 0 1 968 496V496A20 20 0 0 1 948 516H798A20 20 0 0 1 778 496V496A20 20 0 0 1 798 476Z" fill="#ffffff" stroke="#898781" stroke-width="1.5" stroke-dasharray="6 3.75" stroke-linecap="round"/><text x="873" y="502" font-family="IBM Plex Sans" font-size="16" fill="#1a1a1a" text-anchor="middle"><tspan x="873" dy="0">delete pricing.py</tspan></text></g>
+</g>
+</svg>

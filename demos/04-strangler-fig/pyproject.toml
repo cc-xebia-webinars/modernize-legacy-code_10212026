@@ -1,0 +1,23 @@
+[project]
+name = "demo-04-strangler-fig"
+version = "1.0.0"
+description = "Demo 4: a strangler fig rewrite of the pricing rules, checked by a parallel run."
+requires-python = "==3.14.*"
+dependencies = [
+    "arrow==1.4.0",
+]
+
+[dependency-groups]
+dev = ["pytest==9.0.2", "pytest-cov==7.0.0"]
+
+[tool.uv]
+# ShipBill runs in place from this folder, the way it always has, so there's nothing to build.
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["shipbill"]
+branch = true
